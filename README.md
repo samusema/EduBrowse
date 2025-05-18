@@ -90,7 +90,7 @@ edubrowse/
 ### 1. Clone del repository
 
 ```bash
-git clone https://github.com/tuo-utente/edubrowse.git
+git clone https://github.com/samusema/edubrowse.git
 cd edubrowse
 ```
 
@@ -141,15 +141,3 @@ npm run dev
 
 Distribuito sotto licenza MIT. Vedi `LICENSE` per i dettagli.
 
----
-
-## 🤝 Contributi
-
-Pull request benvenute! Per richieste di funzionalità o bug, apri una [issue](https://github.com/tuo-utente/edubrowse/issues).
-
----
-
-## 👨‍💻 Autore
-
-**[Tuo Nome]**  
-Sviluppatore e studente appassionato di sicurezza informatica e applicazioni educative.
