@@ -1,8 +1,3 @@
-Ecco un esempio di `README.md` ben strutturato per il tuo progetto:
-
----
-
-```markdown
 # 🔐 EduBrowse - Browser scolastico con firewall integrato
 
 EduBrowse è un browser personalizzato pensato per l'ambiente scolastico, con **firewall integrato**, **logging delle attività di navigazione**, e una **dashboard di amministrazione** per la gestione dei dispositivi e delle regole di accesso ai siti web.
@@ -19,30 +14,28 @@ EduBrowse è un browser personalizzato pensato per l'ambiente scolastico, con **
 ## 🧱 Architettura del progetto
 
 ```
-
 +------------------+
-\|     Browser      | <------ Studente
-\|  (Electron App)  |
+|     Browser      | <------ Studente
+|  (Electron App)  |
 +--------+---------+
-|
-↓
+         |
+         ↓
 +--------+---------+        +---------------------+
-\|  Proxy/Firewall  | <----> |   URL Filtering     |
-\| (Node.js/Go app) |        | (Blacklist/Rules DB)|
+|  Proxy/Firewall  | <----> |   URL Filtering     |
+| (Node.js/Go app) |        | (Blacklist/Rules DB)|
 +--------+---------+        +----------+----------+
-\|                             |
-↓                             ↓
+         |                             |
+         ↓                             ↓
 +--------+----------+     +--------------------------+
-\|     Logging        |     |  MongoDB (Visited URLs, |
-\|  (Event handler)   |     |  Dispositivi, Regole)   |
+|     Logging        |     |  MongoDB (Visited URLs, |
+|  (Event handler)   |     |  Dispositivi, Regole)   |
 +--------------------+     +--------------------------+
 
 +-------------------------+
-\| Admin Web Dashboard     |
-\| (Gestione dispositivi,  |
-\|  visualizzazione log)   |
+| Admin Web Dashboard     |
+| (Gestione dispositivi,  |
+|  visualizzazione log)   |
 +-------------------------+
-
 ```
 
 ---
@@ -64,7 +57,6 @@ EduBrowse è un browser personalizzato pensato per l'ambiente scolastico, con **
 ## 📁 Struttura delle directory (proposta)
 
 ```
-
 edubrowse/
 │
 ├── browser-app/           # Browser Electron custom
@@ -73,8 +65,7 @@ edubrowse/
 ├── backend-api/           # API REST per MongoDB e autenticazione
 ├── database/              # Script di setup per MongoDB
 └── README.md
-
-````
+```
 
 ---
 
@@ -101,7 +92,7 @@ edubrowse/
 ```bash
 git clone https://github.com/tuo-utente/edubrowse.git
 cd edubrowse
-````
+```
 
 ### 2. Installazione delle dipendenze
 
@@ -139,10 +130,10 @@ npm run dev
 
 ## ✅ To-do (Roadmap)
 
-* [ ] Proxy HTTPS con certificati auto-firmati
-* [ ] Report settimanale delle attività
-* [ ] Machine learning per rilevamento contenuti sospetti
-* [ ] Supporto multi-scuola (tenant system)
+- [ ] Proxy HTTPS con certificati auto-firmati
+- [ ] Report settimanale delle attività
+- [ ] Machine learning per rilevamento contenuti sospetti
+- [ ] Supporto multi-scuola (tenant system)
 
 ---
 
@@ -160,14 +151,5 @@ Pull request benvenute! Per richieste di funzionalità o bug, apri una [issue](h
 
 ## 👨‍💻 Autore
 
-**\[Tuo Nome]**
+**[Tuo Nome]**  
 Sviluppatore e studente appassionato di sicurezza informatica e applicazioni educative.
-
----
-
-```
-
----
-
-Se vuoi, posso generare anche i file base per ogni cartella (`package.json`, `main.js` per Electron, `server.js` per il proxy, ecc.) per aiutarti a partire rapidamente. Vuoi che prepari la base per uno dei moduli?
-```
